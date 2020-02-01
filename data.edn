@@ -1,0 +1,77 @@
+[
+  {
+    :subject #uuid "0a456bfa-d111-4092-85b4-5bb0bf2238d9"
+    :predicate :favorite-foods
+    :object "Pizza"
+  }
+  {
+    :subject #uuid "0a456bfa-d111-4092-85b4-5bb0bf2238d9"
+    :predicate :name
+    :object "Mark"
+  }
+  {
+    :subject #uuid "605d8314-3897-45b1-8d4b-01e89cd84b49"
+    :predicate :name
+    :object "Luke"
+  }
+  {
+    :subject #uuid "0a456bfa-d111-4092-85b4-5bb0bf2238d9"
+    :predicate :favorite-foods
+    :object "Butter Chicken"
+  }
+  {
+    :subject #uuid "0a456bfa-d111-4092-85b4-5bb0bf2238d9"
+    :predicate :favorite-foods
+    :object "Toast with Peanut Butter"
+  }
+  {
+    :subject #uuid "605d8314-3897-45b1-8d4b-01e89cd84b49"
+    :predicate :favorite-foods
+    :object "Pizza"
+  }
+  {
+    :subject #uuid "0a456bfa-d111-4092-85b4-5bb0bf2238d9"
+    :predicate :favorite-band
+    :object "Iron Maiden"
+  }
+  {
+    :subject #uuid "605d8314-3897-45b1-8d4b-01e89cd84b49"
+    :predicate :favorite-foods
+    :object "Ceaser Salad"
+  }
+  {
+    :subject #uuid "605d8314-3897-45b1-8d4b-01e89cd84b49"
+    :predicate :favorite-band
+    :object "Foo Fighters"
+  }
+  {
+    :subject #uuid "0a456bfa-d111-4092-85b4-5bb0bf2238d9"
+    :predicate :job
+    :object "Software Developer"
+  }
+  {
+    :subject #uuid "605d8314-3897-45b1-8d4b-01e89cd84b49"
+    :predicate :job
+    :object "Goat Farmer"
+  }
+  {
+    :subject #uuid "0a456bfa-d111-4092-85b4-5bb0bf2238d9"
+    :predicate :favorite-books
+    :object "Money by Martin Amis"
+  }
+  {
+    :subject #uuid "0a456bfa-d111-4092-85b4-5bb0bf2238d9"
+    :predicate :favorite-books
+    :object "Sharp Objects by Gillian Flynn"
+  }
+  {
+    :subject #uuid "0a456bfa-d111-4092-85b4-5bb0bf2238d9"
+    :predicate :favorite-books
+    :object "Saturday by Ian McEwan"
+  }
+  {
+    :subject #uuid "0a456bfa-d111-4092-85b4-5bb0bf2238d9"
+    :predicate :favorite-books
+    :object "Game of Thrones by George R. R. Martin"
+  }
+]
