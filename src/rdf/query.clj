@@ -13,8 +13,8 @@
     (fn [row] (= (:subject row) subject)) data))
 
 (defn subject-predicates [subject]
-  (sort (distinct (map :predicate (filter
-                    (fn [row] (= subject (:subject row))) data)))))
+  (set (map :predicate (filter
+                         (fn [row] (= subject (:subject row))) data))))
 
 (defn predicate-by-subject [predicate subject]
   (def result-set (map :object (filter
@@ -23,7 +23,7 @@
                            (= subject (:subject row)) )) data)))
   (if (= 1 (count result-set))
     (first result-set)
-    (sort result-set)))
+    (set result-set)))
 
 (defn compose-entity [subject]
   (apply merge-with (comp flatten vector)
