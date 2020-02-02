@@ -8,20 +8,26 @@
               (filter 
                 (fn [row] (= (:object row) n)) data))))
 
-(defn predicate-by-subject [predicate subject]
-  (map :object (filter 
-                 (fn [row] (and 
-                           (= predicate (:predicate row)) 
-                           (= subject (:subject row)) )) data)))
+(defn records-by-subject [subject]
+  (filter
+    (fn [row] (= (:subject row) subject)) data))
 
-(defn group-common-objects [predicate subject]
-  {predicate (predicate-by-subject predicate subject)})
-
-(defn all-predicates-by-subject [subject]
+(defn subject-predicates [subject]
   (sort (distinct (map :predicate (filter
                     (fn [row] (= subject (:subject row))) data)))))
 
-(defn records-by-subject [subject]
-  (filter 
-    (fn [row] (= (:subject row) subject)) data))
+(defn predicate-by-subject [predicate subject]
+  (def result-set (map :object (filter
+                 (fn [row] (and 
+                           (= predicate (:predicate row)) 
+                           (= subject (:subject row)) )) data)))
+  (if (= 1 (count result-set))
+    (first result-set) result-set))
 
+(defn group-predicate [predicate subject]
+  {predicate (predicate-by-subject predicate subject)})
+
+(defn compose-entity [subject]
+  (apply merge-with (comp flatten vector)
+    (map (fn [p] (group-predicate p subject))
+         (subject-predicates subject))))
