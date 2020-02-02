@@ -40,6 +40,11 @@
     :object "Ceaser Salad"
   }
   {
+    :subject #uuid "0a456bfa-d111-4092-85b4-5bb0bf2238d9"
+    :predicate :phone
+    :object "(306) 987-6543"
+  }
+  {
     :subject #uuid "605d8314-3897-45b1-8d4b-01e89cd84b49"
     :predicate :favorite-band
     :object "Foo Fighters"
@@ -61,6 +66,16 @@
   }
   {
     :subject #uuid "0a456bfa-d111-4092-85b4-5bb0bf2238d9"
+    :predicate :city
+    :object "Saskatoon"
+  }
+  {
+    :subject #uuid "0a456bfa-d111-4092-85b4-5bb0bf2238d9"
+    :predicate :postal
+    :object "XYZ 777"
+  }
+  {
+    :subject #uuid "0a456bfa-d111-4092-85b4-5bb0bf2238d9"
     :predicate :favorite-books
     :object "Sharp Objects by Gillian Flynn"
   }
@@ -73,5 +88,25 @@
     :subject #uuid "0a456bfa-d111-4092-85b4-5bb0bf2238d9"
     :predicate :favorite-books
     :object "Game of Thrones by George R. R. Martin"
+  }
+  {
+    :subject #uuid "605d8314-3897-45b1-8d4b-01e89cd84b49"
+    :predicate :phone
+    :object "(306) 123-4567"
+  }
+  {
+    :subject #uuid "605d8314-3897-45b1-8d4b-01e89cd84b49"
+    :predicate :postal
+    :object "ABC 123"
+  }
+  {
+    :subject #uuid "605d8314-3897-45b1-8d4b-01e89cd84b49"
+    :predicate :street
+    :object "123 Fake Street"
+  }
+  {
+    :subject #uuid "605d8314-3897-45b1-8d4b-01e89cd84b49"
+    :predicate :city
+    :object "Gotham"
   }
 ]
