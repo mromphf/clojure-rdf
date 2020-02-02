@@ -14,16 +14,14 @@
                            (= predicate (:predicate row)) 
                            (= subject (:subject row)) )) data)))
 
-(defn all-predicates-by-subject [subject]
-  (distinct (map :predicate (filter 
-                    (fn [row] (= subject (:subject row))) data))))
+(defn group-common-objects [predicate subject]
+  {predicate (predicate-by-subject predicate subject)})
 
-(defn records-by-subject [subject] 
+(defn all-predicates-by-subject [subject]
+  (sort (distinct (map :predicate (filter
+                    (fn [row] (= subject (:subject row))) data)))))
+
+(defn records-by-subject [subject]
   (filter 
     (fn [row] (= (:subject row) subject)) data))
 
-(defn records-by-subject-name [n] 
-  (filter 
-    (fn [row] (= (:subject row) (subject-by-name n))) data))
-
-(defn compose-entity [subject] nil)

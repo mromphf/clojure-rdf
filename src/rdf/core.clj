@@ -5,4 +5,4 @@
 
 (defn -main
   [& args]
-  (println (query/find-subject-by-name "Mark")))
+  (println "Hello world!"))
