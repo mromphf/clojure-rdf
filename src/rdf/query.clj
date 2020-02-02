@@ -22,7 +22,8 @@
                            (= predicate (:predicate row)) 
                            (= subject (:subject row)) )) data)))
   (if (= 1 (count result-set))
-    (first result-set) result-set))
+    (first result-set)
+    (sort result-set)))
 
 (defn compose-entity [subject]
   (apply merge-with (comp flatten vector)
