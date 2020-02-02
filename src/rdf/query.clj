@@ -24,10 +24,8 @@
   (if (= 1 (count result-set))
     (first result-set) result-set))
 
-(defn group-predicate [predicate subject]
-  {predicate (predicate-by-subject predicate subject)})
-
 (defn compose-entity [subject]
   (apply merge-with (comp flatten vector)
-    (map (fn [p] (group-predicate p subject))
+    (map (fn [p]
+         {p (predicate-by-subject p subject)})
          (subject-predicates subject))))
