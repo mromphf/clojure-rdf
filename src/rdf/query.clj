@@ -30,3 +30,12 @@
     (map (fn [p]
          {p (predicate-by-subject p subject)})
          (subject-predicates subject))))
+
+(defn complete-structure-match [subject keys]
+  (not (some (fn [match] (= match false))
+             (map (fn [p] (contains? (subject-predicates subject) p)) keys))))
+
+(defn partial-structure-match [subject keys]
+  ;; needs work. will return nil if no matches
+  (some (fn [match] (= match false))
+             (map (fn [p] (contains? (subject-predicates subject) p)) keys)))
