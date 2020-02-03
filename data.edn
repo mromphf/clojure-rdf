@@ -109,4 +109,19 @@
     :predicate :city
     :object "Gotham"
   }
+  {
+    :subject #uuid "7ca71fe2-b5a7-43e4-81fd-219ad9bb6e70"
+    :predicate :name
+    :object "Matthew"
+  }
+  {
+    :subject #uuid "7ca71fe2-b5a7-43e4-81fd-219ad9bb6e70"
+    :predicate :job
+    :object "Shepard"
+  }
+  {
+    :subject #uuid "7ca71fe2-b5a7-43e4-81fd-219ad9bb6e70"
+    :predicate :motto
+    :object "You can't draw blood from a stone."
+  }
 ]
